@@ -1,4 +1,5 @@
 import PID from "@/components/buttons/PID";
+import Map from "@/components/Maps/BaseMap";
 import Photobox from "@/components/Photobox";
 import { StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -12,6 +13,7 @@ export default function HomeScreen() {
         <PID label="Not paid PID" />
         <PID label="Part paid PID" />
       </View>
+      <Map coords={[0.0, 0.0]} />
     </SafeAreaView>
   );
 }

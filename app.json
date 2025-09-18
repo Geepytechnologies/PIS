@@ -19,7 +19,14 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.geepytech.Enpis"
     },
     "web": {
       "bundler": "metro",
@@ -29,15 +36,25 @@
     "plugins": [
       "expo-router",
       [
+        "expo-dev-client",
+        {
+          "launchMode": "most-recent"
+        }
+      ],
+      [
         "expo-location",
         {
           "locationWhenInUsePermission": "Show current location on map."
         }
       ],
-      "@rnmapbox/maps",
-      {
-        "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiZ2VlcHl0ZWNoIiwiYSI6ImNtZnBreW5sdTBneDYyanM4YzY5ZjRxZ3UifQ.YKgBnWMLEhznDgcPDdfmIg"
-      },
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsVersion": "11.0.0",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiZ2VlcHl0ZWNoIiwiYSI6ImNtZnBreW5sdTBneDYyanM4YzY5ZjRxZ3UifQ.YKgBnWMLEhznDgcPDdfmIg"
+        }
+      ],
       [
         "expo-splash-screen",
         {
