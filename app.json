@@ -22,8 +22,6 @@
       "predictiveBackGestureEnabled": false,
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION"
       ],
       "package": "com.geepytech.Enpis"
@@ -48,14 +46,6 @@
         }
       ],
       [
-        "@rnmapbox/maps",
-        {
-          "RNMapboxMapsImpl": "mapbox",
-          "RNMapboxMapsVersion": "11.0.0",
-          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiZ2VlcHl0ZWNoIiwiYSI6ImNtZnBreW5sdTBneDYyanM4YzY5ZjRxZ3UifQ.YKgBnWMLEhznDgcPDdfmIg"
-        }
-      ],
-      [
         "expo-splash-screen",
         {
           "image": "./assets/images/mysplash.png",
@@ -71,6 +61,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "39e58132-0ea4-4e5c-918b-369948c28bb0"
+      }
     }
   }
 }

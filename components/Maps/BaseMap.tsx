@@ -3,10 +3,7 @@ import pako from "pako";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
 
-// MapboxGL.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_ACCESS_TOKEN!);
-MapboxGL.setAccessToken(
-  "pk.eyJ1IjoiZ2VlcHl0ZWNoIiwiYSI6ImNsejJsaTRycjBsZTQyaXBubHVkcXl4MnAifQ.blpG7Z6yXdZjnxwOtY7HQA"
-);
+MapboxGL.setAccessToken(process.env.EXPO_PUBLIC_MAPBOX_ACCESS_TOKEN!);
 
 interface MapProps {
   coords: [number, number];
