@@ -9,9 +9,8 @@ export default ({ config }: { config: ExpoConfig }) => ({
     [
       "@rnmapbox/maps",
       {
-        RNMapboxMapsImpl: "mapbox",
-        RNMapboxMapsVersion: "11.0.0",
         RNMapboxMapsDownloadToken: process.env.MAPBOX_DOWNLOADS_TOKEN,
+        RNMapboxMapsVersion: "11.0.0",
       },
     ],
   ],
